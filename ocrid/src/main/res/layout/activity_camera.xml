@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/sfv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+
+    <RelativeLayout
+        android:layout_width="308dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/scan_line"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bd_ocr_id_card_locator_front" />
+
+        <qiao.ocr.ocrid.view.CornerView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            app:corner_gravity="leftBottom" />
+
+        <qiao.ocr.ocrid.view.CornerView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:corner_gravity="rightBottom" />
+
+        <qiao.ocr.ocrid.view.CornerView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            app:corner_gravity="rightTop" />
+
+        <qiao.ocr.ocrid.view.CornerView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            app:corner_gravity="leftTop" />
+
+    </RelativeLayout>
+
+    <qiao.ocr.ocrid.view.MaskView
+        android:id="@+id/mv_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:boxHeight="190"
+        app:boxWidth="308"
+        app:lineAnimColor="@color/common_color"></qiao.ocr.ocrid.view.MaskView>
+
+    <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="20dp"
+        android:background="@drawable/bd_ocr_close" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/ocr_title"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/light_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:padding="15dp"
+        android:paddingBottom="3dp"
+        android:src="@drawable/bd_ocr_light_off" />
+</FrameLayout>

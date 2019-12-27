@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">OCRID</string>
+  <string name="ocr_title">将身份证人像面置于此区域内，头像对准，扫描</string>
+
+</resources>

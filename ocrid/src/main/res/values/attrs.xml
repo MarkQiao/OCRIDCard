@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="CornerView">
+    <attr name="corner_color" format="color" />
+    <attr name="corner_width" format="dimension" />
+    <attr name="corner_gravity" format="enum">
+      <enum name="leftBottom" value="1" />
+      <enum name="rightBottom" value="3" />
+      <enum name="leftTop" value="0" />
+      <enum name="rightTop" value="2" />
+    </attr>
+  </declare-styleable>
+  <!--最好是自定义View的类名，查看起来一目了然-->
+  <declare-styleable name="MaskView">
+    <attr name="boxWidth" format="integer" />
+    <attr name="boxHeight" format="integer" />
+    <attr name="lineAnimColor" format="color" />
+  </declare-styleable>
+</resources>

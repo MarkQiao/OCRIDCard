@@ -1,0 +1,2 @@
+include ':app', ':ocrid'
+rootProject.name='OCRIDCard'

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="您的身份证"
+        android:textSize="18sp" />
+
+    <qiao.ocr.ocridcard.weidget.CustomRoundAngleImageView
+        android:id="@+id/trans_imageview"
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/idcard_first" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="请核对身份证号码，确认无误"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/write_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ems="18"
+            android:gravity="center"
+            android:hint="请输入身份证号码、也可手动识别"
+            android:inputType="textPersonName"
+            android:textColor="#ff00BFFF"
+            android:textColorHint="#C6D7FF"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_closs"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="OCR识别"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
